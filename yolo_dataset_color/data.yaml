@@ -1,0 +1,10 @@
+path: y:\github_repository\yolo_task\yolo_dataset_color
+train: images/train
+val: images/val
+names:
+  0: elephant
+  1: monkey
+  2: Peacock
+  3: tiger
+  4: wolf
+nc: 5

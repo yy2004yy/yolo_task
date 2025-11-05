@@ -3,8 +3,8 @@ from ultralytics import YOLO
 
 def train():
     # 硬编码配置（直接替换您的实际路径）
-    PRETRAINED_MODEL = 'runs/detect/train_test/weights/best.pt'  # 替换为您的生成数据模型
-    DATASET_YAML = 'ultralytics/datasets/dataset_real/data.yaml'
+    PRETRAINED_MODEL = 'runs/weights/best.pt'  # 替换为您的生成数据模型
+    DATASET_YAML = 'yolo_dataset_color/data.yaml'
 
     # 检查路径
     if not os.path.exists(DATASET_YAML):
