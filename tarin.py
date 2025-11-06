@@ -22,7 +22,7 @@ def train():
         'batch': 4,
         'imgsz': 640,
         'lr0': 0.001,  # 初始学习率
-        'device': '0',  # 使用GPU
+        'device': 'cpu',  # 使用GPU
         'workers': 4,
         'augment': True,  # 保持基础增强
         'freeze': 10,  # 冻结前10层骨干网络
