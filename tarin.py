@@ -15,14 +15,14 @@ def train():
     # 加载您的生成数据预训练模型
     model = YOLO(PRETRAINED_MODEL)
 
-    # 纯实拍数据微调配置
+    # 数据微调配置
     train_args = {
         'data': DATASET_YAML,
         'epochs': 150,
         'batch': 4,
         'imgsz': 640,
         'lr0': 0.001,  # 初始学习率
-        'device': 'cpu',  # 使用GPU
+        'device': '3',  # 使用GPU
         'workers': 4,
         'augment': True,  # 保持基础增强
         'freeze': 10,  # 冻结前10层骨干网络
